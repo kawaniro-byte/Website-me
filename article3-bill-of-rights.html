@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 5 - Freedom of Religion | Philippine Bill of Rights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        
+        :root {
+            --ph-blue: #0038a8;
+            --ph-red: #ce1126;
+            --ph-yellow: #fcd116;
+            --ph-white: #ffffff;
+            --religious-gold: #d4af37;
+            --religious-purple: #6b3fa0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #faf6f0 0%, #f0e6ff 100%);
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--religious-purple) 0%, #4a2c71 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .religious-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            background: 
+                radial-gradient(circle at 30% 30%, var(--religious-gold) 0%, transparent 20%),
+                radial-gradient(circle at 70% 70%, var(--religious-gold) 0%, transparent 20%);
+            opacity: 0.1;
+        }
+        
+        .section-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(107, 63, 160, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--religious-purple);
+        }
+        
+        .section-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(107, 63, 160, 0.15);
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.2) 100%);
+            border-left: 4px solid var(--religious-gold);
+            padding: 24px;
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .interactive-btn {
+            background: var(--religious-purple);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .interactive-btn:hover {
+            background: #4a2c71;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(107, 63, 160, 0.3);
+        }
+        
+        .religious-icon {
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, var(--religious-gold) 0%, #b8941f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border: 3px solid var(--religious-purple);
+            font-size: 2rem;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--religious-purple);
+            border-radius: 50%;
+            border: 3px solid var(--religious-gold);
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+            
+            .section-card {
+                margin: 1rem 0;
+            }
+            
+            .timeline-item {
+                padding-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <header class="hero-section py-16 px-4">
+        <div class="religious-pattern"></div>
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="religious-icon mb-6">
+                <span>🙏</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 font-['Playfair_Display']">Section 5</h1>
+            <h2 class="text-2xl md:text-4xl font-light mb-8">Freedom of Religion</h2>
+            <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+                The constitutional guarantee protecting every Filipino's right to religious belief and practice
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Constitutional Text -->
+        <section class="mb-16">
+            <div class="section-card p-8">
+                <div class="text-center mb-8">
+                    <div class="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        Article III, Section 5
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 font-['Playfair_Display']">The Constitutional Provision</h2>
+                </div>
+                
+                <div class="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg mb-8">
+                    <p class="text-lg text-purple-800 italic text-center">
+                        "No law shall be made respecting an establishment of religion, or prohibiting the free exercise thereof. The free exercise and enjoyment of religious profession and worship, without discrimination or preference, shall forever be allowed."
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Two Fundamental Protections</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-lg border border-purple-200">
+                                <h4 class="font-semibold text-purple-700 mb-2">1. Non-Establishment Clause</h4>
+                                <p class="text-gray-700">The government cannot establish an official religion or show preference for any particular religion.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-purple-200">
+                                <h4 class="font-semibold text-purple-700 mb-2">2. Free Exercise Clause</h4>
+                                <p class="text-gray-700">Individuals have the right to practice their religion without government interference or prohibition.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://i1.sndcdn.com/artworks-eny1Up2seyjS3Rq1-HTy7Gg-t500x500.jpg" alt="Historic Philippine Constitution document open to Article III Section 5 with golden highlights" class="rounded-lg shadow-lg max-w-full" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historical Context -->
+        <section class="mb-16">
+            <div class="section-card p-8">
+                <h2 class="text-3xl font-bold text-center mb-8 font-['Playfair_Display']">Historical Significance</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/91346842-1eae-44ea-a495-91ea39bb6f9f.png" alt="Historical religious diversity in the Philippines showing different faith communities coexisting peacefully" class="rounded-lg shadow-lg" />
+                    </div>
+                    <div>
+                        <p class="text-gray-700 mb-4 text-lg">
+                            The Philippines has a rich history of religious diversity, from indigenous animistic beliefs to the arrival of Islam in the 14th century and Christianity in the 16th century. Section 5 represents the nation's commitment to protecting this diversity.
+                        </p>
+                        <p class="text-gray-700 text-lg">
+                            This provision ensures that all religions, whether majority or minority, receive equal protection under the law, reflecting the pluralistic nature of Philippine society.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">Key Historical Timeline</h3>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-bold text-purple-700 mb-2">Pre-Colonial Era</h4>
+                                <p>Diverse indigenous religious practices and animistic beliefs across the archipelago</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-bold text-purple-700 mb-2">14th Century</h4>
+                                <p>Arrival of Islam in the southern Philippines</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-bold text-purple-700 mb-2">16th Century</h4>
+                                <p>Spanish colonization brings Christianity, leading to religious tensions</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-bold text-purple-700 mb-2">1987 Constitution</h4>
+                                <p>Strong protections for religious freedom enshrined in Section 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Applications -->
+        <section class="mb-16">
+            <div class="section-card p-8">
+                <h2 class="text-3xl font-bold text-center mb-8 font-['Playfair_Display']">Practical Applications</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What It Protects</h3>
+                        <div class="space-y-4">
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                <h4 class="font-semibold text-green-700 mb-2">✅ Religious Practices</h4>
+                                <p class="text-gray-700">Worship, rituals, ceremonies, and religious observances</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                <h4 class="font-semibold text-green-700 mb-2">✅ Religious Beliefs</h4>
+                                <p class="text-gray-700">Freedom to hold and change religious beliefs without coercion</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                <h4 class="font-semibold text-green-700 mb-2">✅ Religious Education</h4>
+                                <p class="text-gray-700">Right to establish religious schools and teach religious doctrines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Limitations</h3>
+                        <div class="space-y-4">
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h4 class="font-semibold text-red-700 mb-2">❌ Public Safety</h4>
+                                <p class="text-gray-700">Religious practices that endanger public health or safety can be regulated</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h4 class="font-semibold text-red-700 mb-2">❌ Morality</h4>
+                                <p class="text-gray-700">Practices contrary to generally accepted moral standards may be restricted</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h4 class="font-semibold text-red-700 mb-2">❌ Compelling State Interest</h4>
+                                <p class="text-gray-700">Government can regulate religious practices for compelling state interests</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Religious Diversity -->
+        <section class="mb-16">
+            <div class="section-card p-8">
+                <h2 class="text-3xl font-bold text-center mb-8 font-['Playfair_Display']">Religious Diversity in the Philippines</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">🇻🇦</div>
+                        <h3 class="font-bold text-gray-800 mb-2">Roman Catholic</h3>
+                        <p class="text-gray-600">~80% of population</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">☪️</div>
+                        <h3 class="font-bold text-gray-800 mb-2">Islam</h3>
+                        <p class="text-gray-600">~6% of population</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">✝️</div>
+                        <h3 class="font-bold text-gray-800 mb-2">Protestant</h3>
+                        <p class="text-gray-600">~3% of population</p>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Protected Minority Religions</h3>
+                    <p class="text-gray-700">
+                        Section 5 also protects smaller religious communities including Indigenous spiritual traditions, Buddhist communities, Hindu practitioners, Jewish communities, and various other faith groups that contribute to the rich tapestry of Philippine religious diversity.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Section -->
+        <section class="mb-16">
+            <div class="section-card p-8">
+                <h2 class="text-3xl font-bold text-center mb-8 font-['Playfair_Display']">Test Your Understanding</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Quiz</h3>
+                        <div class="space-y-6">
+                            <div class="quiz-question p-6 bg-gray-50 rounded-lg">
+                                <p class="font-semibold mb-3">What are the two main clauses in Section 5?</p>
+                                <div class="space-y-2">
+                                    <label class="flex items-center p-2 bg-white rounded border">
+                                        <input type="radio" name="quiz1" class="mr-3"> Establishment and Free Exercise
+                                    </label>
+                                    <label class="flex items-center p-2 bg-white rounded border">
+                                        <input type="radio" name="quiz1" class="mr-3"> Speech and Assembly
+                                    </label>
+                                    <label class="flex items-center p-2 bg-white rounded border">
+                                        <input type="radio" name="quiz1" class="mr-3"> Privacy and Property
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="quiz-question p-6 bg-gray-50 rounded-lg">
+                                <p class="font-semibold mb-3">Can the government establish an official religion?</p>
+                                <div class="space-y-2">
+                                    <label class="flex items-center p-2 bg-white rounded border">
+                                        <input type="radio" name="quiz2" class="mr-3"> Yes, if it's the majority religion
+                                    </label>
+                                    <label class="flex items-center p-2 bg-white rounded border">
+                                        <input type="radio" name="quiz2" class="mr-3"> No, according to Section 5
+                                    </label>
+                                    <label class="flex items-center p-2 bg-white rounded border">
+                                        <input type="radio" name="quiz2" class="mr-3"> Only with public approval
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Why It Matters Today</h3>
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <p class="text-gray-700 mb-4">
+                                Religious freedom remains crucial in modern Philippine society because it:
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>Protects minority religious groups from discrimination</li>
+                                <li>Promotes social harmony and tolerance</li>
+                                <li>Allows individuals to follow their conscience</li>
+                                <li>Prevents religious conflicts and promotes peace</li>
+                                <li>Encourages dialogue between different faith communities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-6">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/323cac65-ad21-4379-a09f-224aa86f4a2f.png" alt="Official seal of the Republic of the Philippines with emphasis on religious freedom protections" class="mx-auto mb-4 rounded-full w-20 h-20" />
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Religious Freedom Protections</h3>
+            <p class="text-gray-300 mb-6">
+                "The free exercise and enjoyment of religious profession and worship, without discrimination or preference, shall forever be allowed."
+            </p>
+            <div class="flex justify-center space-x-6 flex-wrap">
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">Full Constitution</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">Legal Resources</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">Religious Rights</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            </div>
+            <p class="text-gray-400 mt-8 text-sm">
+                © 2024 Philippine Constitutional Education Initiative. Educational resource on religious freedom.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Quiz functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizRadios = document.querySelectorAll('input[type="radio"]');
+            
+            quizRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    // Quiz 1 - Two clauses question
+                    if (this.name === 'quiz1') {
+                        if (this.parentElement.textContent.includes('Establishment and Free Exercise')) {
+                            showQuizFeedback('Correct! Section 5 contains both the Non-Establishment Clause and the Free Exercise Clause.', 'success');
+                        } else {
+                            showQuizFeedback('Try again. Remember that Section 5 specifically addresses religious freedom through two main clauses.', 'error');
+                        }
+                    }
+                    
+                    // Quiz 2 - Official religion question
+                    if (this.name === 'quiz2') {
+                        if (this.parentElement.textContent.includes('No, according to Section 5')) {
+                            showQuizFeedback('Correct! The government cannot establish an official religion under Section 5.', 'success');
+                        } else {
+                            showQuizFeedback('Incorrect. Section 5 prohibits the government from establishing any official religion.', 'error');
+                        }
+                    }
+                });
+            });
+            
+            function showQuizFeedback(message, type) {
+                const alert = document.createElement('div');
+                alert.className = `fixed top-4 right-4 p-4 rounded-lg shadow-lg z-50 ${
+                    type === 'success' ? 'bg-green-100 border-green-400 text-green-800' : 'bg-red-100 border-red-400 text-red-800'
+                } border-l-4`;
+                alert.textContent = message;
+                document.body.appendChild(alert);
+                
+                setTimeout(() => {
+                    alert.remove();
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
